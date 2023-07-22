@@ -28,6 +28,32 @@ describe('Shape', () => {
         });
     });
 
+    describe('Color', () => {
+        it('should store the text color keyword from the constructor', () => {
+            const color = 'blue';
+            const shape = new Shape("", color, color);
+            expect(shape.textColor).toBe(color);
+        });
+
+        it('should store the text color hexidecimal from the constructor', () => {
+            const color = '#ffff00';
+            const shape = new Shape("", color, color);
+            expect(shape.textColor).toBe(color);
+        });
+
+        it('should store the shape color keyword from the constructor', () => {
+            const color = 'red';
+            const shape = new Shape("", color, color);
+            expect(shape.shapeColor).toBe(color);
+        });
+
+        it('should store the shape color hexidecimal from the constructor', () => {
+            const color = '#00ff00';
+            const shape = new Shape("", color, color);
+            expect(shape.shapeColor).toBe(color);
+        });
+    });
+
     describe('Render', () => {
         it('should throw an error', () => {
             const shape = new Shape();

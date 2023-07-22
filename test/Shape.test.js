@@ -32,7 +32,7 @@ describe('Shape', () => {
         it('should throw an error', () => {
             const shape = new Shape();
             const error = new Error('Shape cannot render. Use child classes.');
-            expect(shape.render()).toThrow(error);
+            expect(shape.render).toThrow(error);
         });
     });
 });

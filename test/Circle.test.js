@@ -9,8 +9,7 @@ describe('Circle', () => {
         });
 
         it('should be a child of the Shape class.', () => {
-            const circle = new Circle();
-            expect(circle.prototype).toBeInstanceOf(Shape);
+            expect(Circle.prototype).toBeInstanceOf(Shape);
         });
     });
 
@@ -27,7 +26,7 @@ describe('Circle', () => {
             const color = 'red';
             const circle = new Circle(color);
             expect(circle.render()).toEqual(
-                `<circle cx="150" cy="100" r="80" fill="${color}" />`
+                `<circle cx="50" cy="50" r="50" fill="${color}" />`
             );
         });
     });

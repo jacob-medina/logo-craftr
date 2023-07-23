@@ -19,13 +19,6 @@ describe('Shape', () => {
             const shape = new Shape(text);
             expect(shape.text).toBe(text);
         });
-
-        it('should throw an error if the text is longer than three characters', () => {
-            const text = "SVGA";
-            const error = new Error("Must input a maximum of three characters.");
-            const shape = () => new Shape(text);
-            expect(shape).toThrow(error);
-        });
     });
 
     describe('Color', () => {

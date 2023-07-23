@@ -14,6 +14,13 @@ describe('Shape', () => {
             const shape = new Shape(color);
             expect(shape.color).toBe(color);
         });
+
+        it('should store the shape color when SetColor is called', () => {
+            const color = "red";
+            const shape = new Shape();
+            shape.setColor(color);
+            expect(shape.color).toBe(color);
+        });
     });
 
     describe('Render', () => {

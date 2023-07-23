@@ -8,42 +8,11 @@ describe('Shape', () => {
         });
     });
 
-    describe('Text', () => {
-        it('should have a default text of an empty string', () => {
-            const shape = new Shape();
-            expect(shape.text).toBe("");
-        });
-
-        it('should store the text from the constructor', () => {
-            const text = "SVG";
-            const shape = new Shape(text);
-            expect(shape.text).toBe(text);
-        });
-    });
-
     describe('Color', () => {
-        it('should store the text color keyword from the constructor', () => {
-            const color = 'blue';
-            const shape = new Shape("", color, color);
-            expect(shape.textColor).toBe(color);
-        });
-
-        it('should store the text color hexidecimal from the constructor', () => {
-            const color = '#ffff00';
-            const shape = new Shape("", color, color);
-            expect(shape.textColor).toBe(color);
-        });
-
-        it('should store the shape color keyword from the constructor', () => {
+        it('should store the shape color from the constructor', () => {
             const color = 'red';
-            const shape = new Shape("", color, color);
-            expect(shape.shapeColor).toBe(color);
-        });
-
-        it('should store the shape color hexidecimal from the constructor', () => {
-            const color = '#00ff00';
-            const shape = new Shape("", color, color);
-            expect(shape.shapeColor).toBe(color);
+            const shape = new Shape(color);
+            expect(shape.color).toBe(color);
         });
     });
 

@@ -19,6 +19,17 @@ describe('Text', () => {
             const color = "red";
             const text = new Text("", color);
             expect(text.color).toBe(color);
-        })
-    })
+        });
+    });
+
+    describe('Render', () => {
+        it('should return an svg text tag with the proper text and color', () => {
+            const input = "SVG";
+            const color = "red";
+            const text = new Text(input, color);
+            expect(text.render()).toEqual(
+                `<text x="150" y="125" font-size="60" text-anchor="middle" fill="${color}">${input}</text>`
+            );
+        });
+    });
 });

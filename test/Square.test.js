@@ -26,7 +26,7 @@ describe('Square', () => {
             const color = 'red';
             const square = new Square(color);
             expect(square.render()).toEqual(
-                `<rect width="100" height="100" fill="${color}"/>`
+                `<rect x="70" y="20" width="160" height="160" fill="${color}"/>`
             );
         });
     });

@@ -1,10 +1,17 @@
 const Logo = require('../lib/Logo');
 const Circle = require('../lib/Circle');
+const Text = require('../lib/Text');
 
 describe('Logo', () => {
     describe('Instantiate', () => {
         it('should be an instance of the Logo class', () => {
-            const logo = new Logo();
+            const options = {
+                text: "SVG",
+                textColor: "red",
+                shape: "circle",
+                shapeColor: "black"
+            };
+            const logo = new Logo(options);
             expect(logo).toBeInstanceOf(Logo);
         });
     });

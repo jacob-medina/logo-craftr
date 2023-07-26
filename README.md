@@ -5,7 +5,7 @@
 
 Logo Craftr is a command lined based logo creater that dynamically generates logos based on the user's input.
 
-![Example Logo](./images/logo-example.png)
+![Example Logo](./dist/logo.svg)
 
 
 ## Installation

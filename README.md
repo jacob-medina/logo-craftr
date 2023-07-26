@@ -13,7 +13,7 @@ First, clone the GitHub repository:
 
     git clone git@github.com:jacob-medina/logocraftr.git
 
-Inside the `logocraftr` directory, install npm dependencies:
+Inside the `logo-craftr` directory, install npm dependencies:
 
     npm install
 
